@@ -1,0 +1,137 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+      Splitter Ratio: 0.5
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+  - Class: rviz_common/Time
+    Name: Time
+  - Class: nav2_rviz_plugins/Navigation 2
+    Name: Navigation 2
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Reference Frame: map
+      Plane Cell Count: 50
+      Color: 160; 160; 164
+      Cell Size: 1
+      Enabled: true
+      
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Arrows: true
+      Show Axes: true
+      
+    - Class: rviz_default_plugins/LaserScan
+      Name: LiDAR Scan
+      Topic: /lidar
+      Color: 255; 255; 0
+      Size: 0.05
+      Style: Flat Squares
+      Use rainbow: true
+      Enabled: true
+
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot Model
+      Enabled: true
+      Description Source: Topic
+      Description Topic: /robot_description
+
+    - Class: rviz_default_plugins/Map
+      Name: SLAM Map
+      Enabled: true
+      Topic: /map
+
+    - Class: rviz_default_plugins/Map
+      Name: Global Costmap
+      Enabled: true
+      Topic: /global_costmap/costmap
+
+    - Class: rviz_default_plugins/Map
+      Name: Local Costmap
+      Enabled: true
+      Topic: /local_costmap/costmap
+
+    - Class: rviz_default_plugins/Pose
+      Name: Goal Pose
+      Enabled: true
+      Topic: /goal_pose
+      Shape: Arrow
+      
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Detected Objects
+      Topic: /detected_objects
+      Enabled: true
+      
+    - Class: rviz_default_plugins/Path
+      Name: Rover Path
+      Topic: /rover_path
+      Color: 0; 255; 0
+      Enabled: true
+      Line Width: 0.05
+
+    - Class: rviz_default_plugins/Path
+      Name: Nav Global Plan
+      Topic: /plan
+      Color: 0; 170; 255
+      Enabled: true
+      Line Width: 0.05
+
+    - Class: rviz_default_plugins/Path
+      Name: Nav Local Plan
+      Topic: /local_plan
+      Color: 255; 170; 0
+      Enabled: true
+      Line Width: 0.07
+      
+    - Class: rviz_default_plugins/Odometry
+      Name: Odometry
+      Topic: /odom
+      Color: 255; 25; 0
+      Enabled: true
+      
+  Global Options:
+    Background Color: 30; 30; 30
+    Fixed Frame: map
+    Frame Rate: 30
+    
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic: /initialpose
+    - Class: nav2_rviz_plugins/GoalTool
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+      
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 15.0
+      Enable Stereo Rendering: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Name: Current View
+      Pitch: 0.785
+      Target Frame: base_link
+      Yaw: 0.785
+      
+Window Geometry:
+  Width: 1600
+  Height: 900
