@@ -221,6 +221,4 @@ ros2 param set /object_detector max_cluster_distance 0.4
 
 Apache 2.0
 
-## Author
 
-Sakshi - [@Showdchiper](https://github.com/Showdchiper)
